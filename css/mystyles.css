@@ -1,0 +1,31 @@
+*{
+    margin: 0px; /*controlamos el margen de inicio*/
+    padding: 0px; /*controlamos el acolchado o relleno de inicio*/
+    box-sizing: border-box;
+}
+
+.nav-brand{
+    font-size: 2rem;
+}
+
+.navbar{
+    background-color: #e0d3c6;
+}
+
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+h1{
+    font-weight: 700;
+}
+
+/* 
+.color1 {color: #36363b;}
+.color2 {color: #5f4b4f;}
+.color3 {color: #957483;}
+.color4 {color: #d7adb3;}
+.color5 {color: #e0d3c6;}
+ */

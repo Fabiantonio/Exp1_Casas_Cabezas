@@ -71,6 +71,13 @@ h1{
     }
 }
 
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* 
 .color1 {color: #36363b;}
 .color2 {color: #5f4b4f;}

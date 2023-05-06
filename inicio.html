@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
     <link rel="stylesheet" type="text/css" href="css/mystyles.css">
     <link rel="icon" href="img/icons8-huella-de-gato-16.png">
     <title>Inicio</title>
@@ -43,6 +46,7 @@
     </header>
 
     <section class="main">
+      </form>
       <div id="carouselExampleCaptions" class="carousel slide container-fluid  pt-5" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -158,7 +162,7 @@
         </div>
         <div class="row text">
           <div class="col-lg-6 text-center m-auto">
-            <button type="button" class="btn btn-outline-dark">Ver más</button>
+            <button type="button" class="btn btn-outline-dark" onclick="location.href='#productos'">Ver más</button>
           </div>
         </div>
       </div>
@@ -173,7 +177,7 @@
           </div>
         <div class="row">
           <div class="col-lg-4">
-            <img src="img/perro_adopcion.png"  class="adopcion img-fluid mb-3" alt="">
+            <img src="img/perro_adopcion.png"  class="adopcion img-fluid mb-3" width="384" alt="">
             <h5></h5>
             <p></p>
           </div>
@@ -190,12 +194,43 @@
         </div>
         <div class="row text">
           <div class="col-lg-6 text-center m-auto">
-            <button type="button" class="btn btn-outline-dark">Contactanos</button>
+            <button type="button" class="btn btn-outline-dark" onclick="location.href='/formulario.html'">Contactanos</button>
           </div>
         </div>
         </div>
       </div>
     </section>
+
+    <div class="calculator card">
+
+        <input type="textfield" id="resultado" class="calculator-screen z-depth-1" value="" readonly>
+        <div class="calculator-keys">
+            <input type="button" id="sumar" class="operator btn btn-info" value="+">
+            <input type="button" id="restar" class="operator btn btn-info" value="-">
+            <input type="button" id="multiplicar" class="operator btn btn-info" value="*">
+            <input type="button" id="dividir" class="operator btn btn-info" value="/">
+            <br>
+            <input type="button" id="7" value="7" class="btn btn-light waves-effect">
+            <input type="button" id="8" value="8" class="btn btn-light waves-effect">
+            <input type="button" id="9" value="9" class="btn btn-light waves-effect">
+            <br>
+            <input type="button" id="4" value="4" class="btn btn-light waves-effect">
+            <input type="button" id="5" value="5" class="btn btn-light waves-effect">
+            <input type="button" id="6" value="6" class="btn btn-light waves-effect">
+            <br>
+            <input type="button" id="1" value="1" class="btn btn-light waves-effect">
+            <input type="button" id="2" value="2" class="btn btn-light waves-effect">
+            <input type="button" id="3" value="3" class="btn btn-light waves-effect">
+            <br>
+            <input type="button" id="0" value="0" class="btn btn-light waves-effect">
+            <input type="button" id="p" value="." class="decimal function btn btn-secondary">
+            <input type="reset" id="reset" class="all-clear function btn btn-danger btn-sm" value="AC">
+
+            <input type="button" id="equal" class="equal-sign operator btn btn-default" value="=">
+        </div>
+    </div>
+
+    <!-- <form class="calcu card" name="calc"> -->
 
     <section class="shop" id="productos">
       <div class="container p-5">
@@ -385,7 +420,7 @@
     </footer>
 
 
-    
+    <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   </body>
